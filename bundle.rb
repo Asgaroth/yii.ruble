@@ -19,6 +19,7 @@ END
 			sub_menu.command 'Controller:Render'
 			sub_menu.command 'Controller:Render with var'
 			sub_menu.command 'Controller:Action'
+			sub_menu.command 'Open View'
 			sub_menu.separator
 			sub_menu.command 'New Criteria'
 			sub_menu.command 'Add a Criteria setting'

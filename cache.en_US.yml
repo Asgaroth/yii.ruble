@@ -1,20 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: Asgaroth Belem
 children:
-- !command
-  async: false
-  customProperties: null
-  displayName: Class API
-  input: [selection, word]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+H]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/commands.rb
-  runType: current_thread
-  scope: source
-  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   category: null
@@ -99,99 +85,6 @@ children:
   runType: current_thread
   scope: source
   tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children: &id001 []
-    commandName: Class API
-    customProperties: null
-    displayName: Class API
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Controller:Render
-      customProperties: null
-      displayName: Controller:Render
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Controller:Render with var
-      customProperties: null
-      displayName: Controller:Render with var
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Controller:Action
-      customProperties: null
-      displayName: Controller:Action
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: New Criteria
-      customProperties: null
-      displayName: New Criteria
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Add a Criteria setting
-      customProperties: null
-      displayName: Add a Criteria setting
-      path: bundle.rb
-      scope: null
-    commandName: Controller
-    customProperties: null
-    displayName: Controller
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Create Url
-      customProperties: null
-      displayName: Create Url
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Begin Transaction
-      customProperties: null
-      displayName: Begin Transaction
-      path: bundle.rb
-      scope: null
-    commandName: Application
-    customProperties: null
-    displayName: Application
-    path: bundle.rb
-    scope: null
-  commandName: Yii
-  customProperties: null
-  displayName: Yii
-  path: bundle.rb
-  scope: null
-- !command
-  async: false
-  customProperties: null
-  displayName: Class API
-  input: [selection, word]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+H]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/commands.rb
-  runType: current_thread
-  scope: source
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -411,7 +304,7 @@ children:
   path: snippets/model.rb
   runType: current_thread
   scope: source
-  tags: *id001
+  tags: &id001 []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -481,6 +374,119 @@ children:
   natures: [com.aptana.projects.webnature, com.aptana.editor.php.phpNature]
   path: samples/project_samples.rb
   scope: null
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: *id001
+    commandName: Class API
+    customProperties: null
+    displayName: Class API
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Controller:Render
+      customProperties: null
+      displayName: Controller:Render
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller:Render with var
+      customProperties: null
+      displayName: Controller:Render with var
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller:Action
+      customProperties: null
+      displayName: Controller:Action
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Open View
+      customProperties: null
+      displayName: Open View
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: New Criteria
+      customProperties: null
+      displayName: New Criteria
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Add a Criteria setting
+      customProperties: null
+      displayName: Add a Criteria setting
+      path: bundle.rb
+      scope: null
+    commandName: Controller
+    customProperties: null
+    displayName: Controller
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Create Url
+      customProperties: null
+      displayName: Create Url
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Begin Transaction
+      customProperties: null
+      displayName: Begin Transaction
+      path: bundle.rb
+      scope: null
+    commandName: Application
+    customProperties: null
+    displayName: Application
+    path: bundle.rb
+    scope: null
+  commandName: Yii
+  customProperties: null
+  displayName: Yii
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Class API
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+H]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open View
+  input: [word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+E]
+  outputPath: null
+  outputType: discard
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {scope: source.php}
 decreaseIndentMarkers: {}

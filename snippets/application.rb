@@ -21,4 +21,24 @@ try{
 }
 '
 	end
+	
+	snippet 'Yii User' do |s|
+	  s.trigger = 'yiiuser'
+	  s.expansion = "Yii::app()->user${1}"
+	end
+	
+	snippet 'Set Flash Message' do |s|
+	  s.trigger = 'yf'
+	  s.expansion = "Yii::app()->user->setFlash('${1:key}', Yii::t('${2:app}', '${3:message}'));"
+	end
+	
+	snippet 'Get Flash Message' do |s|
+	  s.trigger = 'yf'
+	  s.expansion = "Yii::app()->user->getFlash('${1:key}')"
+	end
+	
+	snippet 'Translate' do |s|
+	  s.trigger = 'yiit'
+	  s.expansion = "Yii::t('${1:app}', '${2:message}')"
+	end
 end

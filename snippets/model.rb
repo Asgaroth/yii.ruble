@@ -21,4 +21,5 @@ with_defaults :scope => 'source' do
 	  s.trigger = 'findall'
 	  s.expansion = '${1:Model}::model()->findAllByAttributes(array("${2:key}" => "${3:value}"${}))'
 	end
+	
 end

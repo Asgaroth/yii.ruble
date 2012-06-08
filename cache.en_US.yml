@@ -193,17 +193,6 @@ children:
   runType: current_thread
   scope: source
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectSampleElement
-  category: com.aptana.projects.samples.web.category
-  customProperties: null
-  description: A basic project sample
-  displayName: Project Sample Example
-  icon: {}
-  id: sample.local
-  location: samples/local_sample.zip
-  natures: [com.aptana.projects.webnature]
-  path: samples/project_samples.rb
-  scope: null
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   category: null
@@ -481,6 +470,17 @@ children:
   scope: source
   tags: *id001
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectSampleElement
+  category: com.aptana.projects.samples.web.category
+  customProperties: null
+  description: Base Preconfigured Yii Project
+  displayName: Yii Base Project
+  icon: {}
+  id: yii.base
+  location: samples/local_sample.zip
+  natures: [com.aptana.projects.webnature, com.aptana.editor.php.phpNature]
+  path: samples/project_samples.rb
+  scope: null
 copyright: null
 customProperties: {scope: source.php}
 decreaseIndentMarkers: {}

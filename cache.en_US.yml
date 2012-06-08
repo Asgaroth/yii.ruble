@@ -1,20 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: Asgaroth Belem
 children:
-- !template
-  async: false
-  customProperties: null
-  displayName: Sample File Template
-  filetype: '*.txt'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
 - !command
   async: false
   customProperties: null
@@ -303,30 +289,6 @@ children:
   scope: source
   tags: *id001
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
-  async: false
-  customProperties: null
-  displayName: Sample File Template
-  filetype: '*.txt'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectTemplateElement
-  customProperties: {replace_parameters: true}
-  description: A basic template which includes only a default index.html file
-  displayName: Sample Project Template
-  icon: null
-  id: Sample Project Template
-  location: templates/sample_project_template.zip
-  path: templates/templates.rb
-  scope: null
-  type: WEB
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   category: null
@@ -439,6 +401,82 @@ children:
   outputPath: null
   outputType: insert_as_snippet
   path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [find]
+  description: null
+  displayName: Find
+  expansion: ${1:Model}::model()->find(${})
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/model.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [findpk]
+  description: null
+  displayName: Find By Primary Key
+  expansion: ${1:Model}::model()->findByPk(\$${2:id})
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/model.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [findall]
+  description: null
+  displayName: Find All
+  expansion: ${1:Model}::model()->findAll(${})
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/model.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [findall]
+  description: null
+  displayName: Find All By Attributes
+  expansion: ${1:Model}::model()->findAllByAttributes(array("${2:key}" => "${3:value}"${}))
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/model.rb
   runType: current_thread
   scope: source
   tags: *id001

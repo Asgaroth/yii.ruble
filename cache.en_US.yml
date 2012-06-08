@@ -1,0 +1,273 @@
+!!com.aptana.scripting.model.BundleElement
+author: Asgaroth Belem
+children:
+- !template
+  async: false
+  customProperties: null
+  displayName: Sample File Template
+  filetype: '*.txt'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: true}
+  description: A basic template which includes only a default index.html file
+  displayName: Sample Project Template
+  icon: null
+  id: Sample Project Template
+  location: templates/sample_project_template.zip
+  path: templates/templates.rb
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectSampleElement
+  category: com.aptana.projects.samples.web.category
+  customProperties: null
+  description: A basic project sample
+  displayName: Project Sample Example
+  icon: {}
+  id: sample.local
+  location: samples/local_sample.zip
+  natures: [com.aptana.projects.webnature]
+  path: samples/project_samples.rb
+  scope: null
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Class API
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+SHIFT+H]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [url]
+  description: null
+  displayName: Create Url
+  expansion: Yii::app()->createUrl('${1:route}', array('${2:params}'))
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: &id001 []
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [transaction]
+  description: null
+  displayName: Begin Transaction
+  expansion: "\\$transaction = Yii::app()->db->beginTransaction();\ntry{\n\t${1://TODO}\n\
+    \t\\$transaction->commit();\n}catch(Exception \\$e){\n\t\\$transaction->rollback();\n\
+    \tYii::app()->handleException(\\$e);\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [render]
+  description: null
+  displayName: Controller:Render
+  expansion: \$this->render('${1:view}');
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/controller.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [render]
+  description: null
+  displayName: Controller:Render with var
+  expansion: \$this->render('${1:view}', compact('${2:var}'${});
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/controller.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [action]
+  description: null
+  displayName: Controller:Action
+  expansion: "\npublic function action${1:Name}()\n{\n   \\$this->render('${2:view}');\n\
+    }    \n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/controller.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [criteria]
+  description: null
+  displayName: New Criteria
+  expansion: '\$criteria = new CDbCriteria;
+
+    \$criteria->condition = ''${1://query condition}'';
+
+    \$criteria->order = ''${2://order by}'';
+
+    \$criteria->limit = ''${3://limit}'';
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/controller.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: *id001
+    commandName: Class API
+    customProperties: null
+    displayName: Class API
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Controller:Render
+      customProperties: null
+      displayName: Controller:Render
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller:Render with var
+      customProperties: null
+      displayName: Controller:Render with var
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller:Action
+      customProperties: null
+      displayName: Controller:Action
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: New Criteria
+      customProperties: null
+      displayName: New Criteria
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Add a Criteria setting
+      customProperties: null
+      displayName: Add a Criteria setting
+      path: bundle.rb
+      scope: null
+    commandName: Controller
+    customProperties: null
+    displayName: Controller
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Create Url
+      customProperties: null
+      displayName: Create Url
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Begin Transaction
+      customProperties: null
+      displayName: Begin Transaction
+      path: bundle.rb
+      scope: null
+    commandName: Application
+    customProperties: null
+    displayName: Application
+    path: bundle.rb
+    scope: null
+  commandName: Yii
+  customProperties: null
+  displayName: Yii
+  path: bundle.rb
+  scope: null
+copyright: null
+customProperties: {scope: source.php}
+decreaseIndentMarkers: {}
+description: 'Sample description
+
+  '
+displayName: Yii
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: git@github.com:Asgaroth/yii.ruble.git
+visible: true

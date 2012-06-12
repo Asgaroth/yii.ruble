@@ -175,122 +175,6 @@ children:
   async: false
   category: null
   customProperties:
-    prefix_values: [url]
-  description: null
-  displayName: Create Url
-  expansion: Yii::app()->createUrl('${1:route}', array('${2:params}'))
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [transaction]
-  description: null
-  displayName: Begin Transaction
-  expansion: "\\$transaction = Yii::app()->db->beginTransaction();\ntry{\n\t${1://TODO}\n\
-    \t\\$transaction->commit();\n}catch(Exception \\$e){\n\t\\$transaction->rollback();\n\
-    \tYii::app()->handleException(\\$e);\n}\n"
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [yiiuser]
-  description: null
-  displayName: Yii User
-  expansion: Yii::app()->user${1}
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [yf]
-  description: null
-  displayName: Set Flash Message
-  expansion: Yii::app()->user->setFlash('${1:key}', Yii::t('${2:app}', '${3:message}'));
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [yf]
-  description: null
-  displayName: Get Flash Message
-  expansion: Yii::app()->user->getFlash('${1:key}')
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
-    prefix_values: [yiit]
-  description: null
-  displayName: Translate
-  expansion: Yii::t('${1:app}', '${2:message}')
-  iconPath: null
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/application.rb
-  runType: current_thread
-  scope: source
-  tags: []
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  category: null
-  customProperties:
     prefix_values: [find]
   description: null
   displayName: Find
@@ -304,7 +188,7 @@ children:
   path: snippets/model.rb
   runType: current_thread
   scope: source
-  tags: &id001 []
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -323,7 +207,7 @@ children:
   path: snippets/model.rb
   runType: current_thread
   scope: source
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -342,7 +226,7 @@ children:
   path: snippets/model.rb
   runType: current_thread
   scope: source
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -361,7 +245,7 @@ children:
   path: snippets/model.rb
   runType: current_thread
   scope: source
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.ProjectSampleElement
   category: com.aptana.projects.samples.web.category
@@ -376,7 +260,7 @@ children:
   scope: null
 - !!com.aptana.scripting.model.MenuElement
   children:
-  - children: *id001
+  - children: &id001 []
     commandName: Class API
     customProperties: null
     displayName: Class API
@@ -486,6 +370,236 @@ children:
   path: commands/commands.rb
   runType: current_thread
   scope: source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [url]
+  description: null
+  displayName: Create Url
+  expansion: Yii::app()->createUrl('${1:route}', array('${2:params}'))
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [params]
+  description: null
+  displayName: Application Params
+  expansion: Yii::app()->params['${1:route}']
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [get]
+  description: null
+  displayName: Request
+  expansion: Yii::app()->request->getParam('${1:route}', '${1:default}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [app]
+  description: null
+  displayName: Application
+  expansion: Yii::app()->${}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [get]
+  description: null
+  displayName: Request Post
+  expansion: Yii::app()->request->getPost('${1:route}', '${1:default}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [get]
+  description: null
+  displayName: Request Query
+  expansion: Yii::app()->request->getQuery('${1:route}', '${1:default}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [transaction]
+  description: null
+  displayName: Begin Transaction
+  expansion: "\\$transaction = Yii::app()->db->beginTransaction();\ntry{\n\t${1://TODO}\n\
+    \t\\$transaction->commit();\n}catch(Exception \\$e){\n\t\\$transaction->rollback();\n\
+    \tYii::app()->handleException(\\$e);\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [yiiuser]
+  description: null
+  displayName: Yii User
+  expansion: Yii::app()->user${1}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [yf]
+  description: null
+  displayName: Set Flash Message
+  expansion: Yii::app()->user->setFlash('${1:key}', Yii::t('${2:app}', '${3:message}'));
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [yf]
+  description: null
+  displayName: Get Flash Message
+  expansion: Yii::app()->user->getFlash('${1:key}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [yiit]
+  description: null
+  displayName: Translate
+  expansion: Yii::t('${1:app}', '${2:message}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [log]
+  description: null
+  displayName: Application Log
+  expansion: Yii::log(${1:msg},CLogger::LEVEL_${2:INFO}, '${3:application}')
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/application.rb
+  runType: current_thread
+  scope: source
+  tags: *id001
   workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {scope: source.php}

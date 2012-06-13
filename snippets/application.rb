@@ -15,6 +15,31 @@ with_defaults :scope => 'source' do
 		snip.icon_path = "icons/icons.png"
 	end
 
+	snippet "Application Params" do |snip|
+		snip.trigger = "params"
+		snip.expansion = "Yii::app()->params['${1:route}']"
+	end
+
+	snippet "Request" do |snip|
+		snip.trigger = "get"
+		snip.expansion = "Yii::app()->request->getParam('${1:route}', '${1:default}')"
+	end
+	
+	snippet "Application" do |snip|
+    snip.trigger = "app"
+    snip.expansion = "Yii::app()->${}"
+  end
+
+	snippet "Request Post" do |snip|
+		snip.trigger = "get"
+		snip.expansion = "Yii::app()->request->getPost('${1:route}', '${1:default}')"
+	end
+
+	snippet "Request Query" do |snip|
+		snip.trigger = "get"
+		snip.expansion = "Yii::app()->request->getQuery('${1:route}', '${1:default}')"
+	end
+
 	#CDbCriteria
 	snippet 'Begin Transaction' do |snip|
 		snip.trigger ='transaction'
@@ -48,4 +73,9 @@ try{
 	  s.trigger = 'yiit'
 	  s.expansion = "Yii::t('${1:app}', '${2:message}')"
 	end
+	
+	snippet 'Application Log' do |s|
+    s.trigger = 'log'
+    s.expansion = "Yii::log(${1:msg},CLogger::LEVEL_${2:INFO}, '${3:application}')"
+  end
 end

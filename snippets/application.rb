@@ -2,10 +2,17 @@ require 'ruble'
 
 with_defaults :scope => 'source' do
 	
+	snippet_category "application" do |category|
+	  category.icon_path = "icons/yii.png"
+	end
+
 	#createUrl
 	snippet "Create Url" do |snip|
 		snip.trigger = "url"
 		snip.expansion = "Yii::app()->createUrl('${1:route}', array('${2:params}'))"
+		snip.category = "application"
+		snip.category = "Creates an Application Url"
+		snip.icon_path = "icons/icons.png"
 	end
 
 	snippet "Application Params" do |snip|

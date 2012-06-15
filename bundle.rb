@@ -26,6 +26,7 @@ END
 		end
 		menu.separator
 		menu.command 'Create Url'
+		menu.command 'Base Url'
 		menu.command 'Render Partial'
 		menu.menu 'Application' do |sub_menu|
   		sub_menu.command 'Begin Transaction'

@@ -14,6 +14,12 @@ with_defaults :scope => 'source' do
 		snip.category = "Creates an Application Url"
 		snip.icon_path = "icons/icons.png"
 	end
+	
+	#createUrl
+  snippet "Base Url" do |snip|
+    snip.trigger = "baseurl"
+    snip.expansion = "Yii::app()->baseUrl"
+  end
 
 	snippet "Application Params" do |snip|
 		snip.trigger = "params"

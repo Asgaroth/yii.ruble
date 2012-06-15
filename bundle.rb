@@ -25,9 +25,10 @@ END
 			sub_menu.command 'Add a Criteria setting'
 		end
 		menu.separator
+		menu.command 'Create Url'
+		menu.command 'Render Partial'
 		menu.menu 'Application' do |sub_menu|
-			sub_menu.command 'Create Url'
-			sub_menu.command 'Begin Transaction'
+  		sub_menu.command 'Begin Transaction'
 		end
 	end
 end

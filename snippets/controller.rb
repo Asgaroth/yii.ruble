@@ -5,7 +5,7 @@ with_defaults :scope => 'source' do
     snip.expansion = '\$this->render(\'${1:view}\');'
   end
   
-   snippet 'Controller:Render' do |snip|
+   snippet 'Render Partial' do |snip|
     snip.trigger = 'render' 
     snip.expansion = '\$this->renderPartial(\'${1:view}\');'
   end
